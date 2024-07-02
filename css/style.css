@@ -48,7 +48,6 @@ img {
 
 body {
     font-family: 'Muller', sans-serif;
-    min-width: 1200px;
     padding: 30px 15px;
     background-color: #F1F1F1;
 }
@@ -57,9 +56,10 @@ body {
     --base-color:#C93;
 }
 .container {
-    width: 1170px;
+    max-width: 1170px;
     padding-bottom: 0;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 .flex {
     display: flex;
@@ -112,10 +112,6 @@ body {
     padding: 0;
     border: none;
     background: none;
-}
-
-.container {
-    margin-bottom: 70px;
 }
 
 .section-name {
@@ -203,15 +199,11 @@ body {
     padding: 27px 45px;
     background-color: #fff;
     border-radius: 15px;
+    justify-content: space-between;
 }
 
-
-.header-list-item:not(:last-child) {
-    margin-right: 45px;
-}
-
-.header-list-item:last-child {
-    margin-right: 115px;
+.header-nav-list {
+    gap: 30px;
 }
 
 .header-list-link {
@@ -449,17 +441,15 @@ body {
 
 .adv-item {
     width: 276px;
-    margin-bottom: 22px;
     padding: 40px;
     background-color: #fff;
     border-radius: 15px;
 }
 
-.adv-item:not(:nth-child(4n)) {
-    margin-right: 22px;
-}
 .adv-list {
     flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
 }
 
 .adv-text {
@@ -478,18 +468,21 @@ body {
 
 .siting-list {
     flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
 }
 .siting-item {
     width: 374px;
-    margin-bottom: 24px;
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
 }
 
-.siting-item:not(:nth-child(3n)) {
-    margin-right: 24px;
+.siting-item:last-child {
+    height: 450px;
 }
+
 .card-desc {
     padding: 32px 45px;
     position: relative;
